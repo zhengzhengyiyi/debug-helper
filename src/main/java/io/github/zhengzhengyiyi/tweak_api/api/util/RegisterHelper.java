@@ -4,7 +4,12 @@ import io.github.zhengzhengyiyi.tweak_api.api.Debugger;
 import io.github.zhengzhengyiyi.tweak_api.DebugHelper;
 
 /**
- * A helper for register all stuff that define by this mod
+ * <h2>A helper for register all stuff that define by this mod</h2>
+ * 
+ * Register debugger, without print into the file
+ * 
+ * @author zhengzhengyiyi
+ * @since 1.0.1
  */
 public class RegisterHelper {
 	

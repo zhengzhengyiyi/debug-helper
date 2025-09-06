@@ -9,9 +9,13 @@ import org.slf4j.LoggerFactory;
 import java.util.List;
 
 import io.github.zhengzhengyiyi.tweak_api.api.Debugger;
-
+//import io.github.zhengzhengyiyi.tweak_api.example.Example;
 import net.fabricmc.api.ModInitializer;
 
+/**
+ * @author zhengzhengyiyi
+ * @since 1.0.1
+ */
 public class DebugHelper implements ModInitializer {
 	
 	/**
@@ -42,8 +46,8 @@ public class DebugHelper implements ModInitializer {
 	public static List<Debugger> debuggers = new ArrayList<>();
 	
 	public static boolean debug(@Nullable Boolean v) {
-		if (v) {
-			_debug = v;
+		if (v != null) {
+			_debug = v.booleanValue();
 		}
 		
 		return _debug;
@@ -54,5 +58,8 @@ public class DebugHelper implements ModInitializer {
 	 */
 	@Override
 	public void onInitialize() {
+//		Example example = new Example(MOD_ID);
+//		
+//		example.runExampleWorkflow();
 	}
 }

@@ -5,7 +5,7 @@
 	"name": "debugHelper",
 	"description": "A debug helper api",
 	"authors": [
-		"Me!"
+		"zhengzhengyiyi"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"io.github.zhengzhengyiyi.debughelper.DebugHelper"
+			"io.github.zhengzhengyiyi.tweak_api.DebugHelper"
 		],
 		"client": [
-			"io.github.zhengzhengyiyi.debughelper.DebugHelperClient"
+			"io.github.zhengzhengyiyi.tweak_api.DebugHelperClient"
 		]
 	},
 	"mixins": [

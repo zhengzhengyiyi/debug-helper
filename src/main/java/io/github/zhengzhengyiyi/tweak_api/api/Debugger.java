@@ -5,6 +5,15 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.Identifier;
 
+/**
+ * 
+ * <h2>Debugger</h2>
+ * 
+ * every debugger need to implement this interface.
+ * 
+ * @author zhengzhengyiyi
+ * @since 1.0.1
+ */
 public interface Debugger {
 	/**
 	 * The tick method, called every tick
