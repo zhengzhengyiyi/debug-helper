@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "debughelper",
+	"version": "${version}",
+	"name": "debugHelper",
+	"description": "A debug helper api",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/debughelper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.zhengzhengyiyi.debughelper.DebugHelper"
+		],
+		"client": [
+			"io.github.zhengzhengyiyi.debughelper.DebugHelperClient"
+		]
+	},
+	"mixins": [
+		"debughelper.mixins.json",
+		{
+			"config": "debughelper.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": ">=1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
